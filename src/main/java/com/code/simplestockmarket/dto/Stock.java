@@ -3,7 +3,9 @@ package com.code.simplestockmarket.dto;
 import com.code.simplestockmarket.constant.StockType;
 
 import java.io.Serializable;
-
+/**
+ * @author Krutika Patidar
+ */
 public class Stock implements Serializable {
     private static final long serialVersionID = 1;
 
@@ -45,6 +47,10 @@ public class Stock implements Serializable {
 
     public double getPrice() {
         return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override

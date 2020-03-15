@@ -2,6 +2,7 @@ package com.code.simplestockmarket.service;
 
 import com.code.simplestockmarket.constant.StockType;
 import com.code.simplestockmarket.dto.Stock;
+import com.code.simplestockmarket.exception.StockMarketException;
 import com.code.simplestockmarket.service.impl.StockServiceFactory;
 import org.junit.Assert;
 import org.junit.Before;
@@ -35,27 +36,33 @@ public class StockServiceFactoryTest {
     }
 
     @Test
-    public void testCalculateCommonStockDividend() {
+    public void testCalculateCommonStockDividend() throws StockMarketException {
         double dividend = commonStockOperationService.calculateDividend(commonStock);
         Assert.assertEquals(0.13, dividend, 0);
     }
 
     @Test
-    public void testCalculateCommonStockPERatio() {
+    public void testCalculateCommonStockPERatio() throws StockMarketException {
         double peRatio = commonStockOperationService.calculatePERatio(commonStock);
         Assert.assertEquals(769.23, peRatio, 0);
     }
 
     @Test
-    public void testCalculatePreferredStockDividend() {
+    public void testCalculatePreferredStockDividend() throws StockMarketException {
         double dividend = preferredStockOperationService.calculateDividend(preferredStock);
         Assert.assertEquals(0.02, dividend, 0);
     }
 
     @Test
-    public void testCalculatePERatioPreferredStock() {
+    public void testCalculatePERatioPreferredStock() throws StockMarketException {
         double preferredPERatio = preferredStockOperationService.calculatePERatio(preferredStock);
         Assert.assertEquals(5000.0, preferredPERatio, 0);
+    }
+
+    @Test(expected = StockMarketException.class)
+    public void testCalculatePERatioWithException() throws StockMarketException {
+        preferredStock.setPrice(-1);
+        double preferredPERatio = preferredStockOperationService.calculatePERatio(preferredStock);
     }
 
     @Test(expected = NullPointerException.class)

@@ -17,6 +17,9 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * @author Krutika Patidar
+ */
 public class TradeServiceImpl implements TradeService {
 
     private TradeDao tradeDao = new TradeDaoImpl();
@@ -33,7 +36,7 @@ public class TradeServiceImpl implements TradeService {
         System.out.println("Enter the quantity of shares");
         int quantity = (int) Utils.validateNumber(scanner.nextInt());
 
-        System.out.println("Enter Trade price to " + buySellInput + " the Stock");
+        System.out.println("Enter Trade price to " + tradeType.getValue() + " the Stock");
         double tradePrice = Utils.validateNumber(scanner.nextDouble());
 
         Timestamp timestamp = new Timestamp(new Date().getTime());
@@ -45,7 +48,6 @@ public class TradeServiceImpl implements TradeService {
 
     @Override
     public void getTrade(Trade trade) {
-        System.out.println("Trade details are as below: ");
         tradeDao.getTrade(trade);
     }
 

@@ -13,6 +13,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
+/**
+ * @author Krutika Patidar
+ */
 public class StockMarketMenu {
 
     private StockServiceFactory stockServiceFactory = new StockServiceFactory();

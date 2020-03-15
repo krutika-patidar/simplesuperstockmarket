@@ -11,7 +11,9 @@ import com.code.simplestockmarket.service.StockService;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
-
+/**
+ * @author Krutika Patidar
+ */
 public class StockServiceImpl implements StockService {
 
     private StockDao stockDao = new StockDaoImpl();

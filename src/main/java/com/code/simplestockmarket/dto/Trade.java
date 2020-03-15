@@ -4,7 +4,9 @@ import com.code.simplestockmarket.constant.TradeType;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
-
+/**
+ * @author Krutika Patidar
+ */
 public class Trade implements Serializable {
 
     private static final long serialVersionID = 1;

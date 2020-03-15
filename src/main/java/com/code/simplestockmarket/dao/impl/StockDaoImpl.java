@@ -1,9 +1,14 @@
 package com.code.simplestockmarket.dao.impl;
 
 import com.code.simplestockmarket.constant.StockType;
+import com.code.simplestockmarket.constant.Utils;
 import com.code.simplestockmarket.dao.StockDao;
 import com.code.simplestockmarket.dto.Stock;
+import com.code.simplestockmarket.exception.StockMarketException;
 
+/**
+ * @author Krutika Patidar
+ */
 public class StockDaoImpl implements StockDao {
     @Override
     public void getStock(Stock stock) {
@@ -18,7 +23,7 @@ public class StockDaoImpl implements StockDao {
     }
 
     @Override
-    public Stock addStock(String symbol, StockType type, double lastDividend, double fixedDividend, double parValue, double price) {
-        return new Stock(symbol, type, lastDividend, fixedDividend, parValue, price);
+    public Stock addStock(String symbol, StockType type, double lastDividend, double fixedDividend, double parValue, double price) throws StockMarketException {
+        return new Stock(Utils.validateString(symbol), type, lastDividend, fixedDividend, parValue, price);
     }
 }

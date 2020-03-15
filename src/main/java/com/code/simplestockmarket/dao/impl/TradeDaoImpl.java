@@ -6,12 +6,14 @@ import com.code.simplestockmarket.dto.Stock;
 import com.code.simplestockmarket.dto.Trade;
 
 import java.sql.Timestamp;
-
+/**
+ * @author Krutika Patidar
+ */
 public class TradeDaoImpl implements TradeDao {
     @Override
     public void getTrade(Trade trade) {
         System.out.println("Trade details --> ");
-        System.out.print(" Stock traded - " + trade.getStock());
+        System.out.print(" Stock traded - " + trade.getStock().getSymbol());
         System.out.print(", Buy/Sell - " + trade.getBuyOrSell());
         System.out.print(", quantity - " + trade.getQuantity());
         System.out.print(", Trade Price - " + trade.getTradePrice());

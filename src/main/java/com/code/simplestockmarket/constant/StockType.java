@@ -1,7 +1,9 @@
 package com.code.simplestockmarket.constant;
 
 import com.code.simplestockmarket.exception.StockMarketException;
-
+/**
+ * @author Krutika Patidar
+ */
 public enum StockType {
     COMMON(1, "Common"),
     PREFERRED(2, "Preferred");

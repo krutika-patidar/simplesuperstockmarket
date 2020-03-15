@@ -1,5 +1,7 @@
 package com.code.simplestockmarket.exception;
-
+/**
+ * @author Krutika Patidar
+ */
 public class StockMarketException extends Exception {
     private String msg;
 

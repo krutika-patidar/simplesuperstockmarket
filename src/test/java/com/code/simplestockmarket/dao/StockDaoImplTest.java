@@ -3,6 +3,7 @@ package com.code.simplestockmarket.dao;
 import com.code.simplestockmarket.constant.StockType;
 import com.code.simplestockmarket.dao.impl.StockDaoImpl;
 import com.code.simplestockmarket.dto.Stock;
+import com.code.simplestockmarket.exception.StockMarketException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -32,8 +33,19 @@ public class StockDaoImplTest {
     }
 
     @Test
-    public void testAddStock() {
+    public void testAddStock() throws StockMarketException {
         Stock expectedStock = stockDao.addStock("ABC", StockType.COMMON, 0, 0, 100, 100);
         Assert.assertEquals(expectedStock.toString(), stock.toString());
+    }
+
+    @Test(expected = StockMarketException.class)
+    public void testAddStockWithException() throws StockMarketException {
+        Stock expectedStock = stockDao.addStock(null, StockType.COMMON, 0, 0, 100, 100);
+    }
+
+    @Test
+    public void testStockMarketCustomException() {
+        StockMarketException exception= new StockMarketException("Invalid Input");
+        Assert.assertEquals(exception.getCustomMessage(), "Invalid Input");
     }
 }

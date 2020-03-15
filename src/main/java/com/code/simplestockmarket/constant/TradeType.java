@@ -1,7 +1,9 @@
 package com.code.simplestockmarket.constant;
 
 import com.code.simplestockmarket.exception.StockMarketException;
-
+/**
+ * @author Krutika Patidar
+ */
 public enum TradeType {
     BUY(1, "Buy"),
     SELL(2, "Sell");
