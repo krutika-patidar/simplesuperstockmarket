@@ -1,7 +1,7 @@
 # Simple Super Stock Market
 Implementation of Simple Super Stock Market Problem Statement
 
-####Problem Statement
+#Problem Statement
 Provide working source code that will :-
 1. For a given stock,
 
@@ -15,7 +15,7 @@ Provide working source code that will :-
     
 2. Calculate the GBCE All Share Index using the geometric mean of prices for all stocks.
 
-####Solution
+#Solution
 
 I have tried to provide Menu driven solution for this problem. I have tried to keep the solution basic and minimal.
 ```bash
@@ -26,7 +26,7 @@ Tech Stack
         Mockito version 1.9.5
 3. Build: Maven
 ```
-####How to use
+#How to use
 Run Application:
 ```bash
 run SimpleSuperStockMarket.class Main class
