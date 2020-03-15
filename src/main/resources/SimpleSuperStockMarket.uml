@@ -3,84 +3,86 @@
   <ID>JAVA</ID>
   <OriginalElement>com.code.simplestockmarket.SimpleSuperStockMarket</OriginalElement>
   <nodes>
-    <node x="440.0" y="522.5">com.code.simplestockmarket.service.StockMarketMenu</node>
-    <node x="-35.0" y="380.5">com.code.simplestockmarket.service.TradeService</node>
-    <node x="845.0" y="181.5">com.code.simplestockmarket.service.impl.StockServiceFactory</node>
-    <node x="1830.5" y="860.5">com.code.simplestockmarket.service.StockService</node>
-    <node x="1830.5" y="599.5">com.code.simplestockmarket.service.impl.StockServiceImpl</node>
-    <node x="1650.0" y="362.5">com.code.simplestockmarket.service.StockOperationService</node>
-    <node x="1311.0" y="362.5">com.code.simplestockmarket.service.impl.PreferredStockOperationService</node>
-    <node x="1641.5" y="42.5">com.code.simplestockmarket.service.impl.CommonStockOperationService</node>
-    <node x="499.0" y="72.5">com.code.simplestockmarket.SimpleSuperStockMarket</node>
-    <node x="-35.0" y="599.5">com.code.simplestockmarket.service.impl.TradeServiceImpl</node>
+    <node x="920.0" y="482.5">com.code.simplestockmarket.service.StockMarketMenu</node>
+    <node x="1485.0" y="820.5">com.code.simplestockmarket.service.TradeService</node>
+    <node x="45.0" y="301.5">com.code.simplestockmarket.service.impl.StockServiceFactory</node>
+    <node x="1310.5" y="20.5">com.code.simplestockmarket.service.StockService</node>
+    <node x="950.5" y="-0.5">com.code.simplestockmarket.service.impl.StockServiceImpl</node>
+    <node x="610.0" y="602.5">com.code.simplestockmarket.service.StockOperationService</node>
+    <node x="979.0" y="952.5">com.code.simplestockmarket.SimpleSuperStockMarket</node>
+    <node x="121.5" y="722.5">com.code.simplestockmarket.service.impl.CommonStockOperationService</node>
+    <node x="591.0" y="482.5">com.code.simplestockmarket.service.impl.PreferredStockOperationService</node>
+    <node x="1485.0" y="559.5">com.code.simplestockmarket.service.impl.TradeServiceImpl</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.code.simplestockmarket.service.impl.StockServiceFactory" target="com.code.simplestockmarket.service.StockOperationService">
-      <point x="195.0" y="0.0" />
-      <point x="1720.0" y="240.0" />
-      <point x="-40.0" y="-37.5" />
-    </edge>
-    <edge source="com.code.simplestockmarket.SimpleSuperStockMarket" target="com.code.simplestockmarket.service.StockMarketMenu">
-      <point x="0.0" y="47.5" />
-      <point x="0.0" y="-157.5" />
-    </edge>
-    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.StockOperationService">
-      <point x="160.0" y="-40.0" />
-      <point x="1760.0" y="640.0" />
-      <point x="0.0" y="37.5" />
-    </edge>
-    <edge source="com.code.simplestockmarket.service.impl.StockServiceFactory" target="com.code.simplestockmarket.service.impl.PreferredStockOperationService">
-      <point x="195.0" y="40.0" />
-      <point x="1440.0" y="280.0" />
-      <point x="0.0" y="-37.5" />
-    </edge>
-    <edge source="com.code.simplestockmarket.service.impl.TradeServiceImpl" target="com.code.simplestockmarket.service.TradeService">
-      <point x="0.0" y="-80.5" />
-      <point x="0.0" y="59.5" />
-    </edge>
-    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.TradeService">
-      <point x="-40.0" y="-157.5" />
-      <point x="560.0" y="440.0" />
-      <point x="195.0" y="0.0" />
-    </edge>
-    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.impl.TradeServiceImpl">
-      <point x="-160.0" y="0.0" />
-      <point x="195.0" y="0.0" />
-    </edge>
-    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.impl.StockServiceFactory">
-      <point x="40.0" y="-157.5" />
-      <point x="640.0" y="240.0" />
-      <point x="-195.0" y="0.0" />
-    </edge>
-    <edge source="com.code.simplestockmarket.service.impl.PreferredStockOperationService" target="com.code.simplestockmarket.service.StockOperationService">
-      <point x="129.0" y="0.0" />
+      <point x="40.0" y="58.5" />
+      <point x="280.0" y="640.0" />
       <point x="-110.0" y="0.0" />
     </edge>
-    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.StockService">
+    <edge source="com.code.simplestockmarket.SimpleSuperStockMarket" target="com.code.simplestockmarket.service.StockMarketMenu">
+      <point x="0.0" y="-47.5" />
       <point x="0.0" y="157.5" />
-      <point x="600.0" y="920.0" />
-      <point x="-129.5" y="0.0" />
     </edge>
-    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.impl.StockServiceImpl">
-      <point x="160.0" y="0.0" />
-      <point x="-129.5" y="0.0" />
+    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.StockOperationService">
+      <point x="-160.0" y="0.0" />
+      <point x="110.0" y="0.0" />
     </edge>
-    <edge source="com.code.simplestockmarket.service.impl.StockServiceFactory" target="com.code.simplestockmarket.service.impl.CommonStockOperationService">
-      <point x="40.0" y="-58.5" />
-      <point x="1080.0" y="80.0" />
-      <point x="-118.5" y="0.0" />
+    <edge source="com.code.simplestockmarket.service.impl.StockServiceFactory" target="com.code.simplestockmarket.service.impl.PreferredStockOperationService">
+      <point x="80.0" y="58.5" />
+      <point x="320.0" y="520.0" />
+      <point x="-129.0" y="0.0" />
     </edge>
-    <edge source="com.code.simplestockmarket.service.impl.StockServiceImpl" target="com.code.simplestockmarket.service.StockService">
+    <edge source="com.code.simplestockmarket.service.impl.TradeServiceImpl" target="com.code.simplestockmarket.service.TradeService">
       <point x="0.0" y="80.5" />
       <point x="0.0" y="-59.5" />
     </edge>
-    <edge source="com.code.simplestockmarket.service.impl.CommonStockOperationService" target="com.code.simplestockmarket.service.StockOperationService">
+    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.TradeService">
+      <point x="40.0" y="157.5" />
+      <point x="1120.0" y="880.0" />
+      <point x="-195.0" y="0.0" />
+    </edge>
+    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.impl.TradeServiceImpl">
+      <point x="160.0" y="0.0" />
+      <point x="-195.0" y="0.0" />
+    </edge>
+    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.impl.StockServiceFactory">
+      <point x="-40.0" y="-157.5" />
+      <point x="1040.0" y="240.0" />
+      <point x="240.0" y="240.0" />
+      <point x="0.0" y="-58.5" />
+    </edge>
+    <edge source="com.code.simplestockmarket.service.impl.PreferredStockOperationService" target="com.code.simplestockmarket.service.StockOperationService">
       <point x="0.0" y="37.5" />
       <point x="0.0" y="-37.5" />
     </edge>
+    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.StockService">
+      <point x="160.0" y="-40.0" />
+      <point x="1440.0" y="600.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+    <edge source="com.code.simplestockmarket.service.StockMarketMenu" target="com.code.simplestockmarket.service.impl.StockServiceImpl">
+      <point x="0.0" y="-157.5" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="com.code.simplestockmarket.service.impl.StockServiceFactory" target="com.code.simplestockmarket.service.impl.CommonStockOperationService">
+      <point x="-195.0" y="0.0" />
+      <point x="0.0" y="360.0" />
+      <point x="0.0" y="760.0" />
+      <point x="-118.5" y="0.0" />
+    </edge>
+    <edge source="com.code.simplestockmarket.service.impl.StockServiceImpl" target="com.code.simplestockmarket.service.StockService">
+      <point x="129.5" y="0.0" />
+      <point x="-129.5" y="0.0" />
+    </edge>
+    <edge source="com.code.simplestockmarket.service.impl.CommonStockOperationService" target="com.code.simplestockmarket.service.StockOperationService">
+      <point x="118.5" y="0.0" />
+      <point x="720.0" y="760.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
   </edges>
-  <settings layout="Orthogonal" zoom="0.559" x="1027.5" y="489.99999999999994" />
+  <settings layout="Orthogonal" zoom="0.3888111888111888" x="1027.5" y="511.0" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
