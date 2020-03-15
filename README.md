@@ -27,6 +27,7 @@ Tech Stack
 3. Build: Maven
 ```
 #How to use
+
 Run Application:
 ```bash
 run SimpleSuperStockMarket.class Main class
